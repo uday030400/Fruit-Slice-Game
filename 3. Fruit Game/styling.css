@@ -1,0 +1,168 @@
+html{
+    background-blend-mode: darken;
+    background: rgba(0, 0,0,0.4) url("images/fruit.jfif");
+}
+#header{
+    color: rgba(244, 244, 248, 0.993);
+    font-size: 1.2em;
+    background-image: linear-gradient(rgb(83, 202, 36),rgb(75, 6, 202));
+    width: 600px;
+    font-family: cursive;
+    text-align: center;
+}
+#container{
+    width : 900px;
+    height: 500px;;
+    background-image: linear-gradient(rgb(205, 255, 67),rgb(117, 255, 5),rgb(252, 40, 2));
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 25px;
+    box-shadow: 0px 10px 0px 0px rgb(243, 36, 191);
+    -webkit-box-shadow: 0px 4px 0px 0px rgb(243, 36, 191);
+    -o-box-shadow: 0px 4px 0px 0px rgb(243, 36, 191);
+    -moz-box-shadow: 0px 4px 0px 0px rgb(243, 36, 191);
+    -ms-box-shadow: 0px 4px 0px 0px rgb(243, 36, 191);
+    position: relative;
+}
+#scoreBoard{
+    background-color: rgb(35, 11, 253);
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    left: 800px;
+    box-shadow: 0px 4px 0px 0px rgb(252, 235, 86);
+    -webkit-box-shadow: 0px 4px 0px 0px rgb(86, 233, 252);
+    -o-box-shadow: 0px 4px 0px 0px rgb(252, 235, 86);
+    -ms-box-shadow: 0px 4px 0px 0px rgb(252, 235, 86);
+    -moz-box-shadow: 0px 4px 0px 0px rgb(252, 235, 86);
+    border-radius: 5px;
+}
+#correct{
+    background-color: rgb(5, 233, 5);
+    padding: 10px ;
+    color: rgba(255, 255, 255, 0.884);
+    position: absolute;
+    font-size: 1.2em;
+    border-radius: 5px;
+    left: 380px;
+    display: none;
+}
+#WrongAns{
+    background-color: rgb(253, 69, 69);
+    padding: 10px ;
+    color: rgba(255, 255, 255, 0.884);
+    position: absolute;
+    font-size: 1.2em;
+    border-radius: 5px;
+    left: 380px;
+    Display : none;
+}
+#fruitsContainer{
+    background-color: wheat;
+    width: 850px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 60px auto 10px auto;
+    box-shadow: 0px 4px 0px 0px blueviolet;
+    -webkit-box-shadow: 0px 4px 0px 0px blueviolet;
+    -o-box-shadow: 0px 4px 0px 0px blueviolet;
+    -ms-box-shadow: 0px 4px 0px 0px blueviolet;
+    -moz-box-shadow: 0px 4px 0px 0px blueviolet;
+    font-size: 7em;
+    text-align: center;
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.911);
+    position: relative;
+    overflow: hidden;
+}
+#instruction{
+    background-color: rgba(235, 8, 235, 0.699);
+    width: 630px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 4px 0px 0px rgba(146, 3, 165, 0.616);
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(146, 3, 165, 0.616);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(146, 3, 165, 0.616);
+    -ms-box-shadow: 0px 4px 0px 0px rgba(146, 3, 165, 0.616);
+    -o-box-shadow: 0px 4px 0px 0px rgba(146, 3, 165, 0.616);
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 43px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+#startReset{
+    background-color: rgba(82, 212, 245, 0.842);
+    padding: 10px ;
+    color: rgba(8, 8, 8, 0.884);
+    position: absolute;
+    font-size: 1.3em;
+    border-radius: 5px;
+    left: 410px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px 0px rgba(12, 12, 12, 0.329);
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(19, 19, 19, 0.329);
+    -o-box-shadow: 0px 4px 0px 0px rgba(7, 6, 6, 0.329);
+    -ms-box-shadow: 0px 4px 0px 0px rgba(12, 12, 12, 0.329);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(184, 184, 184, 0.329);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+
+}
+#startReset:hover{
+    background-color: rgb(148, 250, 148);
+    box-shadow: 0px 0px 0px 0px rgba(184, 184, 184, 0.329);
+}
+#startReset:active{
+    box-shadow: 0px 0px  rgb(69, 186, 253);
+    -o-box-shadow: 0px 4px  rgb(69, 186, 253);
+    -ms-box-shadow: 0px 4px  rgb(69, 186, 253);
+    -webkit-box-shadow: 0px 4px  rgb(69, 186, 253);
+    -moz-box-shadow: 0px 4px  rgb(69, 186, 253);
+}
+#trialsLeft{
+    background-color: rgb(35, 11, 253);
+    padding: 10px ;
+    left: 50px;
+    color: white;
+    position: absolute;
+    font-size: 1.3em;
+    border-radius: 5px;
+    display: none;
+    /* visibility: hidden; */
+}
+.life{
+    width : 30px;
+    height: 30px;
+}
+.fruits{
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: absolute;
+}
+#gameOver{
+    width: 720px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: rgba(255, 206, 72, 0.993);
+    font-size: 2.8em;
+    color: rgb(131, 9, 212);
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 145px;
+    left: 110px;
+    display: none;
+    z-index: 2;
+}
+#textGameover{
+    color: darkred;
+    font-size: 1.2em;
+}
